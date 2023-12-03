@@ -1,0 +1,63 @@
+:root {
+  --spacing-medium: 20px;
+  --spacing-large: 30px;
+
+  --font-bold: 600;
+  --transition: .4s;
+
+  --font-size-main: 16px;
+  --font-size-subheader: 18px;
+  --font-size-header: 26px;
+
+  --border-radius-small: 5px;
+
+  --text-shadow-black:
+    0 0 2px var(--color-black),
+    0 0 40px var(--color-black);
+  --box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+    0em 0.5em 0.5em rgba(0, 0, 0, 0.3);
+
+  --theme-dark-header: #dfe2df;
+  --theme-light-header: black;
+  --theme-default-header: var(--theme-light-header);
+
+  --theme-dark-bgcolor: linear-gradient(to right top, #061222, #05172d, #021a39, #001e44, #012150);
+  --theme-light-bgcolor: linear-gradient(to right top, #faebd7, #fbeeda, #fcf0de, #fef3e1, #fff5e5);
+  --theme-default-bgcolor: var(--theme-light-bgcolor);
+
+  --theme-dark-color: #dfe2df;
+  --theme-light-color: black;
+  --theme-default-color: var(--theme-light-color);
+
+  --theme-dark-regis: black;
+  --theme-light-regis: white;
+  --theme-default-regis: var();
+
+  --color-white: white;
+  --color-black: black;
+
+  --width-max: 1200px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: var(--theme-default-bgcolor);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-attachment: fixed;
+  font-family: sans-serif;
+  font-size: var(--font-size-main);
+}
+
+img {
+  display: block;
+}
+
+.header__text {
+  line-height: 1.7;
+  font-size: var(--font-size-header);
+  color: var(--theme-default-header);
+  transition: color var(--transition);
+}

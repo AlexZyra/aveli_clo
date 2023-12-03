@@ -1,0 +1,15 @@
+.link {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: darkgoldenrod;
+    text-decoration: none;
+}
+
+.link__img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    object-position: center center;
+}

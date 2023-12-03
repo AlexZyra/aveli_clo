@@ -1,0 +1,26 @@
+.footer {
+    width: 1200px;
+    height: 50px;
+    background-color: var(--theme-default-bgcolor);
+    position: absolute;
+    bottom: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 1px solid black;
+    box-shadow: var(--box-shadow);
+}
+
+.footer span {
+    padding-left: 20px;
+    position: relative;
+    top: 15px;
+    color: var(--theme-default-color);
+}
+
+.footer img{
+    width: 40px;
+    float: right;
+    margin-top: 5px;
+    margin-right: 20px;
+    cursor: pointer;
+}

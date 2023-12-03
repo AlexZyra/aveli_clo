@@ -1,0 +1,11 @@
+.wrapeer{
+    max-width: var(--width-max);
+    margin: auto;
+    padding: var(--spacing-large);
+}
+
+@media screen and (max-width: 1400px) {
+    .wrapeer {
+        padding: var(--spacing-large) var(--spacing-large);
+    }
+}

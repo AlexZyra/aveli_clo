@@ -1,0 +1,11 @@
+.conteiner{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.conteiner button {
+    height: 40px;
+    width: 40px;
+    font-size: var(--font-size-subheader);
+}

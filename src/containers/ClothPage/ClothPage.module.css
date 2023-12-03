@@ -1,0 +1,90 @@
+.spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 56px;
+    height: 56px;
+    display: grid;
+    border: 4.5px solid #0000;
+    border-radius: 50%;
+    border-color: #dbdcef #0000;
+    animation: spinner-e04l1k 1s infinite linear;
+}
+
+.spinner::before,
+.spinner::after {
+    content: "";
+    grid-area: 1/1;
+    margin: 2.2px;
+    border: inherit;
+    border-radius: 50%;
+}
+
+.spinner::before {
+    border-color: #474bff #0000;
+    animation: inherit;
+    animation-duration: 0.5s;
+    animation-direction: reverse;
+}
+
+.spinner::after {
+    margin: 8.9px;
+}
+
+@keyframes spinner-e04l1k {
+    100% {
+        transform: rotate(1turn);
+    }
+}
+
+.wrapper {
+    width: 900px;
+    margin: auto;
+    padding: var(--spacing-large);
+    padding-top: 0px;
+}
+
+.item__container {
+    width: 850px;
+    height: 500px;
+    margin: auto;
+    border-radius: var(--border-radius-small);
+}
+
+.text__container {
+    width: 35%;
+    height: 300px;
+    font-size: 30px;
+    background-color: bisque;
+    text-align: center;
+    border-radius: var(--border-radius-small);
+    box-shadow: var(--box-shadow);
+    display: grid;
+    align-items: center;
+}
+
+.item__container img {
+    width: 60%;
+    height: 500px;
+    border-radius: var(--border-radius-small);
+    box-shadow: var(--box-shadow);
+    float: left;
+    margin-right: 20px;
+}
+
+.addBut{
+    background-color: rgb(89, 193, 89);
+    visibility: visible;
+    height: 40px;
+    margin-top: 70px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.removeBut{
+    background-color: rgb(220, 75, 75);
+    height: 40px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+}

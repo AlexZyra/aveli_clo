@@ -1,0 +1,38 @@
+.container{
+    --border-radius: 10px;
+}
+
+.container{
+    display: flex;
+    margin-top: 40px;
+    margin: auto;
+    
+}
+
+.item {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 300px;
+    margin-right: var(--spacing-medium);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    transition: var(--transition);
+    cursor: pointer;
+    margin: auto;
+}
+
+.item__header{
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    font-size: var(--font-size-subheader);
+    text-align: center;
+    color: var(--theme-default-color);
+}
+
+.item__img{
+    width: 250px;
+    height: 250px;
+}
